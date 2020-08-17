@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Circe-Light";
+  
+    src: url("../fonts/Circe-Light.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/Circe-Light.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe-ExtraBold";
+
+    src: url("../fonts/Circe-ExtraBold.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/Circe-ExtraBold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: 900;
+    font-style: normal;
+}
+
+@mixin oswald {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin circe-light {
+    font-family: 'Circe-Light', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin circe-ebold {
+    font-family: 'Circe-ExtraBold', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
