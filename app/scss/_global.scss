@@ -38,3 +38,15 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-wide {
+    max-width: 1710px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

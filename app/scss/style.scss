@@ -4,7 +4,37 @@
 
 //start header
 
+.header {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    padding-top: 75px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
-
+.menu {
+    &__list {
+        ul {
+            display: flex;
+        }
+    }
+    &__item {
+        font-size: 15px;
+        @include circe-light;
+        padding: 0 0 13px;
+        & + & {
+            margin-left: 90px;
+        }
+        .item-wrapper {
+            min-width: calc(150%);
+            width: 100%;
+        }
+    }
+}
 
 //end header
