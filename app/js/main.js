@@ -1,8 +1,10 @@
 $('.getting__slider').slick({
     centerMode: true,
-    centerPadding: '100px',
-    slidesToShow: 3,
+    // centerPadding: '60px',
+    swipeToSlide: true,
     arrows: false,
     variableWidth: true,
-    autoplay: 1000
+    infinite: true,
+    autoplay: 750,
+    // slidesToScroll: 4,
 });
