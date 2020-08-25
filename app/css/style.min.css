@@ -14,6 +14,41 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?3qok2g");
+  src: url("../fonts/icomoon.eot?3qok2g#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3qok2g") format("truetype"), url("../fonts/icomoon.woff?3qok2g") format("woff"), url("../fonts/icomoon.svg?3qok2g#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook-square:before {
+  content: "\f082";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -173,9 +208,7 @@ body {
 
 .menu__item a:hover {
   border-bottom: 1px solid #baa87d;
-  font-family: 'Circe-ExtraBold', sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  text-shadow: 0 0 15.01px #fff;
 }
 
 .menu__item a::before {
@@ -224,6 +257,28 @@ body {
 .menu__btn-stripe--stripe3 {
   width: 10px;
   margin-left: 3px;
+}
+
+.menu--footer .menu__item a {
+  padding: 0;
+  border: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu--footer .menu__item a:hover {
+  font-family: 'Circe-Light', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #baa87d;
+}
+
+.menu--footer .menu__item--active a {
+  font-family: 'Circe-Light', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #baa87d;
 }
 
 .about {
@@ -517,6 +572,11 @@ body {
   transition: all 0.5s;
 }
 
+.footer__language a {
+  font-size: 15px;
+  line-height: 21px;
+}
+
 .footer__language + .footer__language {
   margin-left: 35px;
 }
@@ -527,4 +587,25 @@ body {
 
 .footer__language:hover {
   color: #baa87d;
+}
+
+.footer__socials a {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  font-size: 19px;
+  line-height: 21px;
+  color: #949493;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer__socials a:hover {
+  color: #baa87d;
+}
+
+.footer__socials a + a {
+  margin-left: 25px;
 }

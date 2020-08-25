@@ -75,7 +75,8 @@
             text-transform: uppercase;
             &:hover {
                 border-bottom: 1px solid $gold;
-                @include circe-ebold;
+                text-shadow: 0 0 15.01px #fff;
+                // @include circe-ebold;
             }
             &::before {
                 display: block;
@@ -117,7 +118,27 @@
             }
         }
     }
+    &--footer {
+        .menu {
+            &__item {
+                a {
+                    padding: 0;
+                    border: none;
+                    transition: all 0.5s;
+                    &:hover {
+                        @include circe-light;
+                        color: $gold;
+                    }
+                }
+                &--active a {
+                    @include circe-light;
+                    color: $gold;
+                }
+            }
+        }
+    }
 }
+
 
 //end header
 //start about
@@ -365,6 +386,10 @@
     &__language {
         text-transform: uppercase;
         transition: all 0.5s;
+        a {
+            font-size: 15px;
+            line-height: 21px;
+        }
         & + & {
             margin-left: 35px;
         }
@@ -373,6 +398,21 @@
         }
         &:hover {
             color: $gold;
+        }
+    }
+    &__socials {
+        a {
+            @include icomoon;
+            font-size: 19px;
+            line-height: 21px;
+            color: #949493;
+            transition: all 0.5s;
+            &:hover {
+                color: $gold;
+            }
+        }
+        a + a {
+            margin-left: 25px;
         }
     }
 }
