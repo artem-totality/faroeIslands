@@ -208,7 +208,9 @@ body {
 
 .menu__item a:hover {
   border-bottom: 1px solid #baa87d;
-  text-shadow: 0 0 15.01px #fff;
+  font-family: 'Circe-ExtraBold', sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .menu__item a::before {
@@ -230,6 +232,7 @@ body {
 }
 
 .menu__btn {
+  display: none;
   cursor: pointer;
   margin-left: 65px;
   padding-left: 5px;
@@ -318,6 +321,14 @@ body {
           box-shadow: 0px 0px 111px 0px rgba(19, 19, 17, 0.5);
 }
 
+.about__item-video .plyr {
+  max-width: 900px;
+}
+
+.about__item-video .plyr.plyr--stopped .plyr__controls {
+  display: none;
+}
+
 .about__item-aside-img {
   width: 555px;
   height: 990px;
@@ -325,7 +336,9 @@ body {
      object-fit: cover;
 }
 
-.about__item--third .about__item-video img, .about__item--first .about__item-video img {
+.about__item--third .about__item-video .plyr,
+.about__item--third .about__item-video img, .about__item--first .about__item-video .plyr,
+.about__item--first .about__item-video img {
   margin-left: auto;
 }
 
@@ -608,4 +621,74 @@ body {
 
 .footer__socials a + a {
   margin-left: 25px;
+}
+
+@media (max-width: 1170px) {
+  .header {
+    padding-top: 60px;
+  }
+  .header__top {
+    margin-bottom: 63px;
+  }
+  .header__title {
+    font-size: 135px;
+  }
+  .header__description {
+    font-size: 27px;
+  }
+  .header__bage {
+    font-size: 14px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 930px) {
+  .header {
+    padding-top: 36px;
+  }
+  .header__top {
+    margin-bottom: 42px;
+  }
+  .header__title {
+    font-size: 100px;
+    width: 750px;
+  }
+  .header__description {
+    font-size: 22px;
+  }
+  .header__bage {
+    font-size: 12px;
+    height: 140px;
+  }
+  .menu__item + .menu__item {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header__top {
+    position: relative;
+  }
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+  .menu__list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+  }
+  .menu__list ul {
+    display: block;
+  }
+  .menu__list li {
+    text-align: center;
+  }
+  .menu__list li a {
+    display: block;
+  }
+  .menu__btn {
+    display: block;
+  }
 }
