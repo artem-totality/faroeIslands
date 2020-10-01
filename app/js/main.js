@@ -5,7 +5,7 @@ $('.getting__slider').slick({
     arrows: false,
     variableWidth: true,
     infinite: true,
-    autoplay: 500,
+    // autoplay: 500,
     // slidesToScroll: 4,
 });
 
@@ -29,3 +29,7 @@ const controls = [
 ];
 
 const players = Plyr.setup('.js-player', { controls });
+
+$('.menu__btn').on('click', function(){
+    $('.header .menu__list > ul').slideToggle();
+  });
