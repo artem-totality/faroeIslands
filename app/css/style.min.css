@@ -264,7 +264,7 @@ body {
 }
 
 .menu--footer .menu__item a {
-  padding: 0;
+  padding: 6px 0 0;
   border: none;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -283,10 +283,6 @@ body {
   font-weight: 300;
   font-style: normal;
   color: #baa87d;
-}
-
-.menu--footer .menu__list {
-  padding-top: 4px;
 }
 
 .about {
@@ -417,7 +413,7 @@ body {
 
 .getting__item:after {
   content: "";
-  width: 200px;
+  width: 51%;
   height: 1px;
   background-color: transparent;
   position: absolute;
@@ -525,9 +521,9 @@ body {
 }
 
 .footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #000), color-stop(20%, transparent), color-stop(80%, transparent), color-stop(98%, #000)), url(../images/footer-bg.png);
-  background-image: -o-linear-gradient(top, #000 2%, transparent 20%, transparent 80%, #000 98%), url(../images/footer-bg.png);
-  background-image: linear-gradient(180deg, #000 2%, transparent 20%, transparent 80%, #000 98%), url(../images/footer-bg.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #000), color-stop(20%, transparent), color-stop(90%, transparent), to(#000)), url(../images/footer-bg.png);
+  background-image: -o-linear-gradient(top, #000 2%, transparent 20%, transparent 90%, #000 100%), url(../images/footer-bg.png);
+  background-image: linear-gradient(180deg, #000 2%, transparent 20%, transparent 90%, #000 100%), url(../images/footer-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -697,6 +693,9 @@ body {
   .getting__item {
     width: 300px;
     height: 514px;
+  }
+  .getting__item:after {
+    bottom: -25px;
   }
   .getting__item-title {
     font-size: 22px;

@@ -124,7 +124,7 @@
         .menu {
             &__item {
                 a {
-                    padding: 0;
+                    padding: 6px 0 0;
                     border: none;
                     transition: all 0.5s;
                     &:hover {
@@ -137,9 +137,7 @@
                     color: $gold;
                 }
             }
-            &__list {
-                padding-top: 4px;
-            }
+            
         }
     }
 }
@@ -272,7 +270,7 @@
         transition: all 0.5s;
         &:after {
             content: "";
-            width: 200px;
+            width: 51%;
             height: 1px;
             background-color: transparent;
             position: absolute;
@@ -360,7 +358,7 @@
 //start footer
 
 .footer {
-    background-image: linear-gradient(180deg, #000 2%, transparent 20%, transparent 80%, #000 98%),
+    background-image: linear-gradient(180deg, #000 2%, transparent 20%, transparent 90%, #000 100%),
     url(../images/footer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
